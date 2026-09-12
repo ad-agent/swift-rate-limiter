@@ -1,0 +1,1 @@
+/// Tracks rate limit statistics.\npublic actor RateLimitStats: Sendable {\n    public private(set) var allowed = 0\n    public private(set) var denied = 0\n    public func recordAllowed() { allowed += 1 }\n    public func recordDenied() { denied += 1 }\n    public var total: Int { allowed + denied }\n}
