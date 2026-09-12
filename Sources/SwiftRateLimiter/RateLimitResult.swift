@@ -1,3 +1,4 @@
+import Foundation
 /// Result of a rate limit check.
 public struct RateLimitResult: Sendable {
     public let allowed: Bool
